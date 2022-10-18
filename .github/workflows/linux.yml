@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: configure
-      run: ./configure --prefix=($pwd)/install
+      run: ./configure --prefix=$(pwd)/install
     - name: Install dependencies
       run: make
     - name: Zip Release
